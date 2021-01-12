@@ -1,0 +1,26 @@
+{
+  "name": "oas_backend",
+  "version": "0.0.1",
+  "description": "Backend-infra OSC ",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmindsclub/OSC.git"
+  },
+  "author": "Merzoug Imad,Djihan Harouni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/openmindsclub/OSC/issues"
+  },
+  "homepage": "https://github.com/openmindsclub/OSC#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
