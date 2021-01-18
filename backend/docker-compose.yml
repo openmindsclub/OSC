@@ -1,0 +1,16 @@
+version : '3.4'
+
+services:
+  database:
+    image: mongo
+    restart: always
+    env_file:
+      - db.env
+    container_name: DB_OSC
+    ports:
+      - "27017:27017"
+    volumes:
+      - volume_mongo:/data/db
+volumes:
+    volume_mongo:
+      name: "OSC_Volume"
