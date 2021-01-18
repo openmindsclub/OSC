@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
-
+//Schema de la collection Sujets de
 const sujet_schema = new Schema({
     name:String,
     topic:String,
@@ -11,3 +11,4 @@ const sujet_schema = new Schema({
         faculte:String //Maybe faculte schema ? 
     }
 })
+module.exports = sujet_schema;
