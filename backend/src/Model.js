@@ -16,8 +16,7 @@ const user = process.env.DB_USER
 const password = process.env.DB_PASS
 const host = process.env.DB_HOST
 mongoose.connect(
-        `mongodb://${user}:${passwords}@${host}:27017/OSC`,
-        {useNewUrlParser: true}
+        `mongodb+srv://osc-user:osc2021@osccluster.kuvo0.mongodb.net/osc-db?retryWrites=true&w=majority`,{useNewUrlParser: true}
     )
     .then(
         err => {console.log(err);}
