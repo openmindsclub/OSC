@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 //Schema de la collection Sujets de
-const sujet_schema = new Schema({
+ const sujet_schema = new Schema({
     name:String,
     topic:String,
     url:String,
@@ -11,4 +11,4 @@ const sujet_schema = new Schema({
         faculte:String //Maybe faculte schema ? 
     }
 })
-module.exports = sujet_schema;
+export default sujet_schema;

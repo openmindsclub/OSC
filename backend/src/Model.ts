@@ -9,21 +9,22 @@
  * 
  */
 
-const mongoose = require('mongoose');
-const sujet_schema = require('../model/Sujets.js');
-require('dotenv').config(); //Import des variable d'emvironement
+import mongoose from 'mongoose';
+import sujet_schema from '../model/Sujets' ;
+import * as dotenv from "dotenv";
+dotenv.config()
+
 const user = process.env.DB_USER
 const password = process.env.DB_PASS
 const host = process.env.DB_HOST
+
 mongoose.connect(
-        `mongodb://${user}:${passwords}@${host}:27017/OSC`,
+        `mongodb://${user}:${password}@${host}:27017/OSC`,
         {useNewUrlParser: true}
     )
     .then(
         err => {console.log(err);}
 );
-
-
 const Sujet_Model = mongoose.model('Sujet',sujet_schema);
-
-module.exports = Sujet_Model;
+export default  Sujet_Model;
+   
